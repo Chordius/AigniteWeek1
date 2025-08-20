@@ -1,10 +1,11 @@
 import logo from './logo.svg';
+import enter from './enter.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="flex justify-center min-h-screen bg-[#212121] text-white">
-      <header className="absolute top-0 text-xl p-5 bg-[#303030] w-screen text-center rounded-lg shadow-sm">
+    <div className="flex justify-center w-full min-h-screen bg-[#212121] text-white">
+      <header className="absolute top-0 text-xl p-5 bg-[#303030] w-full text-center rounded-lg shadow-sm">
         To-Do List Chatbot
       </header>
       <main className="pt-36 w-1/2">
@@ -13,6 +14,7 @@ function App() {
           <div className='bg-[#303030] p-4 rounded-2xl max-w-3/4'>
             <p>GPT, why did the chicken cross the road?</p>
           </div>
+          <img src={enter} className="pl-2 h-12 pt-2 scale-95" alt="enter" />
         </div>
 
         {/* Spacing */}
