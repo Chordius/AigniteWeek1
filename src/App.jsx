@@ -28,14 +28,14 @@ function App() {
 
 				{/* To-Do List */}
 				<div className="flex justify-center">
-					<div className="w-[85%] flex flex-col gap-y-3">
+					<div className="w-[85%] flex flex-col gap-y-4">
 						<p className="font-semibold text-xl">
 							📋 Your To-Do List
 						</p>
 						<hr />
 
-						{/* Card */}
-						<div className="bg-[#303030] p-4 rounded-2xl mb-8 shadow-lg">
+						{/* Card 1*/}
+						<div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
 							<p className="text-base">
 								<span className="text-xl font-semibold">
 									Crossing the Road
@@ -44,11 +44,34 @@ function App() {
 								<br />
 								Why did the Chicken Cross the Road?
 								<br />
-								Date: 30 Februari 2025, 10:00 PM
+								Date: 30 Februari 2025,
+								<br />
+								Time: 11:00 PM
 								<br />
 								Status: Active
 								<br />
 							</p>
+							<input type="checkbox" />
+						</div>
+
+						{/* Card 2*/}
+						<div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
+							<p className="text-base">
+								<span className="text-xl font-semibold">
+									Cleaning the House
+								</span>
+								<br />
+								<br />
+								Why did the Chicken clean the House?
+								<br />
+								Date: 30 Februari 2025
+								<br />
+								Time: 10:00 PM
+								<br />
+								Status: Active
+								<br />
+							</p>
+							<input type="checkbox" />
 						</div>
 					</div>
 				</div>
