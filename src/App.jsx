@@ -28,10 +28,10 @@ function App() {
             {/* Card 1*/}
             <div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
               <p className="text-base">
-                <span className="text-xl font-semibold">Crossing the Road</span>
+                <span className="text-xl font-semibold">Calculus Class</span>
                 <br />
                 <br />
-                Why did the Chicken Cross the Road?
+                
                 <br />
                 Date: 30 Februari 2025,
                 <br />
@@ -46,14 +46,50 @@ function App() {
             {/* Card 2*/}
             <div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
               <p className="text-base">
-                <span className="text-xl font-semibold">Cleaning the House</span>
+                <span className="text-xl font-semibold">Physics Class</span>
                 <br />
                 <br />
-                Why did the Chicken clean the House?
+                
                 <br />
                 Date: 30 Februari 2025
                 <br />
                 Time: 10:00 PM
+                <br />
+                Status: Active
+                <br />
+              </p>
+              <input type="checkbox" />
+            </div>
+
+            {/* Card 3*/}
+            <div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
+              <p className="text-base">
+                <span className="text-xl font-semibold">Organization Meeting</span>
+                <br />
+                <br />
+                
+                <br />
+                Date: 1 March 2025
+                <br />
+                Time: 08:00 PM
+                <br />
+                Status: Active
+                <br />
+              </p>
+              <input type="checkbox" />
+            </div>
+
+            {/* Card 4*/}
+            <div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
+              <p className="text-base">
+                <span className="text-xl font-semibold">Meeting with Lecturer</span>
+                <br />
+                <br />
+                
+                <br />
+                Date: 2 March 2025
+                <br />
+                Time: 05:00 PM
                 <br />
                 Status: Active
                 <br />
