@@ -2,6 +2,33 @@ import enter from './enter.svg';
 import './App.css';
 
 function App() {
+  const tasks = [
+    {
+      title: 'Calculus Class',
+      date: '30 Februari 2025',
+      time: '11:00 PM',
+      status: 'Active',
+    },
+    {
+      title: 'Physics Class',
+      date: '30 Februari 2025',
+      time: '10:00 PM',
+      status: 'Active',
+    },
+    {
+      title: 'Organization Meeting',
+      date: '1 March 2025',
+      time: '08:00 PM',
+      status: 'Active',
+    },
+    {
+      title: 'Meeting with Lecturer',
+      date: '2 March 2025',
+      time: '05:00 PM',
+      status: 'Active',
+    },
+  ];
+
   return (
     <div className="flex justify-center w-full min-h-screen bg-[#212121] text-white">
       <header className="absolute top-0 text-xl p-5 bg-[#303030] w-full text-center rounded-lg shadow-sm">
@@ -25,77 +52,23 @@ function App() {
             <p className="font-semibold text-xl">📋 Your To-Do List</p>
             <hr />
 
-            {/* Card 1*/}
-            <div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
-              <p className="text-base">
-                <span className="text-xl font-semibold">Calculus Class</span>
-                <br />
-                <br />
-                
-                <br />
-                Date: 30 Februari 2025,
-                <br />
-                Time: 11:00 PM
-                <br />
-                Status: Active
-                <br />
-              </p>
-              <input type="checkbox" />
-            </div>
-
-            {/* Card 2*/}
-            <div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
-              <p className="text-base">
-                <span className="text-xl font-semibold">Physics Class</span>
-                <br />
-                <br />
-                
-                <br />
-                Date: 30 Februari 2025
-                <br />
-                Time: 10:00 PM
-                <br />
-                Status: Active
-                <br />
-              </p>
-              <input type="checkbox" />
-            </div>
-
-            {/* Card 3*/}
-            <div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
-              <p className="text-base">
-                <span className="text-xl font-semibold">Organization Meeting</span>
-                <br />
-                <br />
-                
-                <br />
-                Date: 1 March 2025
-                <br />
-                Time: 08:00 PM
-                <br />
-                Status: Active
-                <br />
-              </p>
-              <input type="checkbox" />
-            </div>
-
-            {/* Card 4*/}
-            <div className="bg-[#303030] p-4 rounded-2xl shadow-lg">
-              <p className="text-base">
-                <span className="text-xl font-semibold">Meeting with Lecturer</span>
-                <br />
-                <br />
-                
-                <br />
-                Date: 2 March 2025
-                <br />
-                Time: 05:00 PM
-                <br />
-                Status: Active
-                <br />
-              </p>
-              <input type="checkbox" />
-            </div>
+            {tasks.map((task, index) => (
+              <div key={index} className="bg-[#303030] p-4 rounded-2xl shadow-lg">
+                <p className="text-base">
+                  <span className="text-xl font-semibold">{task.title}</span>
+                  <br />
+                  <br />
+                  <br />
+                  Date: {task.date},
+                  <br />
+                  Time: {task.time}
+                  <br />
+                  Status: {task.status}
+                  <br />
+                </p>
+                <input type="checkbox" />
+              </div>
+            ))}
           </div>
         </div>
       </main>
